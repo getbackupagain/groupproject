@@ -1,0 +1,12 @@
+--this is the file that will hold the create commands for the database
+--the following is the project requirements
+
+/*
+Cairn University would like a database to keep track of the careers of alumni,
+including who are in a position to provide internships and entry level jobs to current students and recent graduates.  
+Use a version control system to share work on the core database structure, 
+and each member of the group should also commit, individually, a SQL file containing an INSERT of 5 actual records of alumni.  
+Real data may be obtained through online sources such as LinkedIn, personal interviews, or existing university resources.  
+
+Submit the URL to the private repository or the SQL file containing the CREATE statements; in addition to your individual SQL file containing INSERT statements.
+*/
