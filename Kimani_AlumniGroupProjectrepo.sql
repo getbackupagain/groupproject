@@ -86,3 +86,18 @@ VALUES ( 'Matt',  'Kwiatkowski', 'mkwiatkowski@delmarvachristian.com', 'https://
 
 INSERT INTO Alumni(alumFirstname, alumLastname, email, linkedinURL)
 VALUES ( 'Jon', 'Kontz', 'jon@kontzholdings.com', 'https://www.linkedin.com/in/jon-kontz-62670229/');
+
+INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
+VALUES (11,'Insight PA', 'Instructional Coach', 2020-08-01)
+
+INSERT INTO Experience( alumniID, companyName, jobTitle)
+VALUES (12,'Sandhills Christian School','Upper School Principal')
+
+INSERT INTO Experience( alumniID, companyName, startDate, endDate)
+VALUES (13,'Spine and Brain Neurosurgery Center', 1994-09-01, 2012-03-01)
+
+INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
+VALUES (14,'Delmarva Christian Schools','Head Of School', 2020-07-01)
+
+INSERT INTO Experience( alumniID, companyName, jobTitle, startDate)
+VALUES (15,'Blockit','Co-Founder','2017-01-01')
