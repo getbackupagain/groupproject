@@ -6,7 +6,7 @@ CREATE TABLE Alumni(
 	,phoneNumber int
 	,DOB date
 	,email varchar(48)
-	,linkedinURL varchar(48)
+	,linkedinURL varchar(128)
 	,graduationYear year
 )ENGINE=InnoDB;
 	
