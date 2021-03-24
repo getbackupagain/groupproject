@@ -17,29 +17,30 @@ Submit the URL to the private repository or the SQL file containing the CREATE s
 CREATE DATABASE cairn_alumni;--comment out if the database has already been selected
 USE cairn_alumni;
 
+ -- We barely got this working, and we're so scared to touch it we put the comments in the readme rather than risk breaking it
+ 
 CREATE TABLE Alumni(
     alumniID int not null auto_increment primary key
     ,alumFirstname varchar (24)
     ,alumMiddlename varchar (24)	
 	,alumLastname varchar(24)
-	,phoneNumber int not null
+	,phoneNumber bigint
 	,DOB date
 	,email varchar(48)
-	,linkedinURL varchar(48)
+	,linkedinURL varchar(128)
 	,graduationYear year
 )ENGINE=InnoDB;
 	
 CREATE TABLE Experience(
     jobID int not null auto_increment primary key
     ,alumniID int not null 
-	,companyName varchar(24)
-	,jobTitle varchar(24)
+	,companyName varchar(64)
+	,jobTitle varchar(64)
 	,startDate date
 	,endDate date
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
 )ENGINE=InnoDB;	
 
--- Mark's insert commands
 INSERT INTO Alumni(alumFirstname,alumLastname,email,linkedinURL,graduationYear)
 VALUES('Andy','Norton','andrew.l.norton@gmail.com','https://www.linkedin.com/in/andy-norton-9a71996/',2020)
 ,('Ben','Rizzo','ben.rizzo456@gmail.com','https://www.linkedin.com/in/ben-r-a43661a1/',2013)
@@ -47,47 +48,47 @@ VALUES('Andy','Norton','andrew.l.norton@gmail.com','https://www.linkedin.com/in/
 ,('Ericka','Potts','epotts@cairn.edu','linkedin.com/in/erickapotts',1993)
 ,('Ken','Pe','kp281@cairn.edu','linkedin.com/in/ken-p-a0127319',2018);
 
-INSERT INTO Experience(alumID,companyName,jobTitle,startDate)
-VALUES(1,'Cairn University','Campus Services Director',2015-06-01)
-,(2,'NewsCorp','DevOps Compute Engineer',2019-07-01)
-,(3,'Alltest Instruments','Vice President of Business Development',2018-01-01)
-,(4,'Robin Downs & associates','Licensed Professional Counselor,2016-04-01)
-,(5,'TD Bank','Financial Planner',2019-08-01);
+INSERT INTO Experience(alumniID,companyName,jobTitle,startDate)
+VALUES(1,'Cairn University','Campus Services Director','2015-06-01')
+,(2,'NewsCorp','DevOps Compute Engineer','2019-07-01')
+,(3,'Alltest Instruments','Vice President of Business Development','2018-01-01')
+,(4,'Robin Downs & associates','Licensed Professional Counselor','2016-04-01')
+,(5,'TD Bank','Financial Planner','2019-08-01');
 
 -- Liza's insert commands
 INSERT INTO Alumni (alumFirstName,alumLastName,phoneNumber,linkedinURL,graduationYear)
 VALUES ('Christian','Kim',2155614200,'linkedin.com/in/christian-kim-91888983',2014);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (6,'Senior Auditor', 2018-08-01);
+VALUES (6,'Senior Auditor', '2018-08-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Rachel','Park', 'linkedin.com/in/a-rachelpark', 2010);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (7, 'Assistant Professor', 2020-01-01);
+VALUES (7, 'Assistant Professor', '2020-01-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Susan', 'Jones', 'linkedin.com/in/susan-jones-lsw-4884a4173', 2015);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (8, 'Assistant Director', 2021-01-01);
+VALUES (8, 'Assistant Director', '2021-01-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Ryan', 'Ludvik', 'linkedin.com/in/ryan-ludvik-709b36117', 2019);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (9, 'Social Work Intern', 2019-07-01);
+VALUES (9, 'Social Work Intern', '2019-07-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Carl', 'Ozeck', ' linkedin.com/in/carl-ozeck-cfp', 2011);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (10, 'Senior Financial Advisor', 2017-08-01);
+VALUES (10, 'Senior Financial Advisor', '2017-08-01');
 
 -- Destry's insert commands
 
@@ -105,3 +106,18 @@ VALUES ( 'Matt',  'Kwiatkowski', 'mkwiatkowski@delmarvachristian.com', 'https://
 
 INSERT INTO Alumni(alumFirstname, alumLastname, email, linkedinURL)
 VALUES ( 'Jon', 'Kontz', 'jon@kontzholdings.com', 'https://www.linkedin.com/in/jon-kontz-62670229/');
+
+INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
+VALUES (11,'Insight PA', 'Instructional Coach', '2020-08-01');
+
+INSERT INTO Experience( alumniID, companyName, jobTitle)
+VALUES (12,'Sandhills Christian School','Upper School Principal');
+
+INSERT INTO Experience( alumniID, companyName, startDate, endDate)
+VALUES (13,'Spine and Brain Neurosurgery Center', '1994-09-01', '2012-03-01');
+
+INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
+VALUES (14,'Delmarva Christian Schools','Head Of School', '2020-07-01');
+
+INSERT INTO Experience( alumniID, companyName, jobTitle, startDate)
+VALUES (15,'Blockit','Co-Founder','2017-01-01');
