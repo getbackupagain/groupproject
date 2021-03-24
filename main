@@ -31,7 +31,7 @@ CREATE TABLE Alumni(
 	
 CREATE TABLE Experience(
     jobID int not null auto_increment primary key
-    ,alumniID int not null 
+    ,alumniID int null 
 		,companyName varchar(24)
 	,jobTitle(24),
 	,status varchar(1)
