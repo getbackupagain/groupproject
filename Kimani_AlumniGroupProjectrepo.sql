@@ -3,7 +3,7 @@ CREATE TABLE Alumni(
     ,alumFirstname varchar (24)
     ,alumMiddlename varchar (24)	
 	,alumLastname varchar(24)
-	,phoneNumber int null
+	,phoneNumber int
 	,DOB date
 	,email varchar(48)
 	,linkedinURL varchar(48)
