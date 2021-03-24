@@ -39,3 +39,24 @@ CREATE TABLE Experience(
 	,endDate null
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
 )ENGINE=InnoDB;	
+
+--Mark's insert commands
+
+--Liza's insert commands
+
+--Destry's insert commands
+
+INSERT INTO Alumni(alumFirstname, alumLastname, email, linkedinURL)
+VALUES ( Tia, Gaines,  rephimwell2@gmail.com,  https://www.linkedin.com/in/tia-gaines-7132178/ )
+
+INSERT INTO Alumni(alumFirstname, alumMiddlename, alumLastname, email,linkedinURL)
+VALUES ( Todd, S, Zimmerman, tzimmerman@cairn.edu, https://cairn.edu/team/todd-zimmerman/)
+
+INSERT INTO Alumni(alumFirstname, alumLastname, email,linkedinURL)
+VALUES ( Wayne, Booz, wayne71@ptd.net, https://www.linkedin.com/in/wayne-booz-29315268/)
+
+INSERT INTO Alumni(alumFirstname, alumLastname,  email,linkedinURL)
+VALUES ( Matt,  Kwiatkowski, mkwiatkowski@delmarvachristian.com, https://www.linkedin.com/in/matt-kwiatkowski-93837412/)
+
+INSERT INTO Alumni(alumFirstname, alumLastname, email, linkedinURL)
+VALUES ( Jon, Kontz, jon@kontzholdings.com, https://www.linkedin.com/in/jon-kontz-62670229/)
