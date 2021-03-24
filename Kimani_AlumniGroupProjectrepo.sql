@@ -13,8 +13,8 @@ CREATE TABLE Alumni(
 CREATE TABLE Experience(
     jobID int not null auto_increment primary key
     ,alumniID int not null 
-	,companyName varchar(24)
-	,jobTitle varchar(24)
+	,companyName varchar(64)
+	,jobTitle varchar(64)
 	,startDate date
 	,endDate date
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
