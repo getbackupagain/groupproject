@@ -20,7 +20,6 @@ CREATE TABLE Experience(
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
 )ENGINE=InnoDB;	
 
--- Mark's insert commands
 INSERT INTO Alumni(alumFirstname,alumLastname,email,linkedinURL,graduationYear)
 VALUES('Andy','Norton','andrew.l.norton@gmail.com','https://www.linkedin.com/in/andy-norton-9a71996/',2020)
 ,('Ben','Rizzo','ben.rizzo456@gmail.com','https://www.linkedin.com/in/ben-r-a43661a1/',2013)
@@ -88,16 +87,16 @@ INSERT INTO Alumni(alumFirstname, alumLastname, email, linkedinURL)
 VALUES ( 'Jon', 'Kontz', 'jon@kontzholdings.com', 'https://www.linkedin.com/in/jon-kontz-62670229/');
 
 INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
-VALUES (11,'Insight PA', 'Instructional Coach', 2020-08-01)
+VALUES (11,'Insight PA', 'Instructional Coach', '2020-08-01');
 
 INSERT INTO Experience( alumniID, companyName, jobTitle)
-VALUES (12,'Sandhills Christian School','Upper School Principal')
+VALUES (12,'Sandhills Christian School','Upper School Principal');
 
 INSERT INTO Experience( alumniID, companyName, startDate, endDate)
-VALUES (13,'Spine and Brain Neurosurgery Center', 1994-09-01, 2012-03-01)
+VALUES (13,'Spine and Brain Neurosurgery Center', '1994-09-01', '2012-03-01');
 
 INSERT INTO Experience( alumniID, companyName, jobTitle,  startDate)
-VALUES (14,'Delmarva Christian Schools','Head Of School', 2020-07-01)
+VALUES (14,'Delmarva Christian Schools','Head Of School', '2020-07-01');
 
 INSERT INTO Experience( alumniID, companyName, jobTitle, startDate)
-VALUES (15,'Blockit','Co-Founder','2017-01-01')
+VALUES (15,'Blockit','Co-Founder','2017-01-01');
