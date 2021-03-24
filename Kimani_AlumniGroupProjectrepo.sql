@@ -29,46 +29,46 @@ VALUES('Andy','Norton','andrew.l.norton@gmail.com','https://www.linkedin.com/in/
 ,('Ken','Pe','kp281@cairn.edu','linkedin.com/in/ken-p-a0127319',2018);
 
 INSERT INTO Experience(alumniID,companyName,jobTitle,startDate)
-VALUES(1,'Cairn University','Campus Services Director',2015-06-01)
-,(2,'NewsCorp','DevOps Compute Engineer',2019-07-01)
-,(3,'Alltest Instruments','Vice President of Business Development',2018-01-01)
-,(4,'Robin Downs & associates','Licensed Professional Counselor',2016-04-01)
-,(5,'TD Bank','Financial Planner',2019-08-01);
+VALUES(1,'Cairn University','Campus Services Director','2015-06-01')
+,(2,'NewsCorp','DevOps Compute Engineer','2019-07-01')
+,(3,'Alltest Instruments','Vice President of Business Development','2018-01-01')
+,(4,'Robin Downs & associates','Licensed Professional Counselor','2016-04-01')
+,(5,'TD Bank','Financial Planner','2019-08-01');
 
 -- Liza's insert commands
 INSERT INTO Alumni (alumFirstName,alumLastName,phoneNumber,linkedinURL,graduationYear)
 VALUES ('Christian','Kim',2155614200,'linkedin.com/in/christian-kim-91888983',2014);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (6,'Senior Auditor', 2018-08-01);
+VALUES (6,'Senior Auditor', '2018-08-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Rachel','Park', 'linkedin.com/in/a-rachelpark', 2010);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (7, 'Assistant Professor', 2020-01-01);
+VALUES (7, 'Assistant Professor', '2020-01-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Susan', 'Jones', 'linkedin.com/in/susan-jones-lsw-4884a4173', 2015);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (8, 'Assistant Director', 2021-01-01);
+VALUES (8, 'Assistant Director', '2021-01-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Ryan', 'Ludvik', 'linkedin.com/in/ryan-ludvik-709b36117', 2019);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (9, 'Social Work Intern', 2019-07-01);
+VALUES (9, 'Social Work Intern', '2019-07-01');
 
 
 INSERT INTO Alumni (alumFirstName,alumLastName,linkedinURL,graduationYear)
 VALUES ('Carl', 'Ozeck', ' linkedin.com/in/carl-ozeck-cfp', 2011);
 
 INSERT INTO Experience (alumniID,jobTitle,startDate)
-VALUES (10, 'Senior Financial Advisor', 2017-08-01);
+VALUES (10, 'Senior Financial Advisor', '2017-08-01');
 
 -- Destry's insert commands
 
