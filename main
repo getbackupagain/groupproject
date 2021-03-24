@@ -19,24 +19,24 @@ USE cairn_alumni;
 
 CREATE TABLE Alumni(
     alumniID int not null auto_increment primary key
-    ,alumFirstname varchar (15)
-    ,alumMiddlename varchar (15)	
-	,alumLastname varchar(15)
+    ,alumFirstname varchar (24)
+    ,alumMiddlename varchar (24)	
+	,alumLastname varchar(24)
 	,phoneNumber int not null
 	,DOB date
-	,email varchar(30)
-	,linkedinURL varchar(30)
-	,graduationYear date
+	,email varchar(48)
+	,linkedinURL varchar(48)
+	,graduationYear year
 )ENGINE=InnoDB;
 	
 CREATE TABLE Experience(
     jobID int not null auto_increment primary key
     ,alumniID int not null 
-		,companyName varchar(20)
-	,jobTitle(20),
+		,companyName varchar(24)
+	,jobTitle(24),
 	,status varchar(1)
 	,startDate date
-	,endDate null
+	,endDate date
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
 )ENGINE=InnoDB;	
 
