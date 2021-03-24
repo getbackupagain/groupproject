@@ -41,6 +41,7 @@ CREATE TABLE Experience(
 	,FOREIGN KEY (alumniID) REFERENCES Alumni(alumniID)
 )ENGINE=InnoDB;	
 
+-- Mark's insert commands
 INSERT INTO Alumni(alumFirstname,alumLastname,email,linkedinURL,graduationYear)
 VALUES('Andy','Norton','andrew.l.norton@gmail.com','https://www.linkedin.com/in/andy-norton-9a71996/',2020)
 ,('Ben','Rizzo','ben.rizzo456@gmail.com','https://www.linkedin.com/in/ben-r-a43661a1/',2013)
